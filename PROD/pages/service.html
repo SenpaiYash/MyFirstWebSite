@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <title>All Blue - Services</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="../assets/js/App.js"></script>
+</head>
+
+<body>
+    <div class="social-bar">
+        <div class="social-btns">
+            <a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="google" href="https://www.google.com/" target="_blank"><i class="fa fa-google"></i></a>
+            <a class="skype" href="https://www.skype.com/" target="_blank"><i class="fa fa-skype"></i></a>
+            <div class="search" onclick="search();"><i class="fa fa-search"></i></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-colour static-top">
+        <div class="container">
+            <!-- Overwriting Padding Top and Bot -->
+            <a class="navbar-brand padding-0" href="../index.html">
+                <img src="../assets/image/4.png" alt="logo" class="logo">
+                <div class="logo-text">All Blue</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home
+              </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-js" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="special-offers.html">Special Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Content  -->
+    <div class="page-title">
+        <h1 class="page-title-h1"></h1>
+    </div>
+
+    <!-- search -->
+    <div class="search-js" style="display:none;">
+        <div class="container">
+            <div class="search-close" onclick="search();">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="search-input">
+                <input name="search" placeholder="Search..." class="search-input-bar" type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="offers-card pt-4">
+        <div class="container">
+            <div class="row db-padding-btm db-attached">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="db-wrapper">
+                        <div class="db-pricing-eleven db-bk-color-one">
+
+                            <div class="type">
+                                <a href="#plan-1" target="_self" rel="noopener noreferrer">Group Packages</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="db-wrapper">
+                        <div class="db-pricing-eleven db-bk-color-two">
+
+                            <div class="type">
+                                <a href="#plan-2" target="_self" rel="noopener noreferrer">Couple Packages</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="db-wrapper">
+                        <div class="db-pricing-eleven db-bk-color-three">
+
+                            <div class="type">
+                                <a href="#plan-3" target="_self" rel="noopener noreferrer">Family Packages</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <section id="plan-1" class="col-sm-12 col-xs-12 db-pricing-eleven no-gutter-sm plans">
+                    <ul>
+                        <li><i class="glyphicon glyphicon-print"></i>Scuba Diving Rs7000<small>/3P</small> or Rs16000<small>/7P</small></li>
+                        <li><i class="glyphicon glyphicon-print"></i>Underwater Scooter Rs5000<small>/3P</small> or Rs12500<small>/7P</small></li>
+                        <li><i class="glyphicon glyphicon-print"></i>Underwater sea walk Rs10000<small>/3P</small> or Rs22500<small>/7P</small></li>
+                        <li><i class="glyphicon glyphicon-print"></i>Deep Sea Fishing Rs12000<small>/3P</small> or Rs30000<small>/7P</small></li>
+                        <li><i class="glyphicon glyphicon-print"></i>Cave Sea Kayak Rs13500<small>/3P</small> or Rs30000<small>/7P</small></li>
+                        <li><i class="glyphicon glyphicon-print"></i>Dolphin Spoting Rs16000<small>/3P</small> or Rs40000<small>/7P</small></li>
+
+                    </ul>
+                </section>
+                <section id="plan-2" class="col-sm-12 col-xs-12 db-pricing-eleven no-gutter-sm plans">
+                    <ul>
+                        <li><i class="glyphicon glyphicon-print"></i>Scuba Rs4000</li>
+                        <li><i class="glyphicon glyphicon-time"></i>UndersWater Scouter Rs3000</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>Undersea walk Rs6000</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>Dolpin Spotting Rs10000</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>Cave Sea Kayal Rs8000</li>
+                    </ul>
+                </section>
+                <section id="plan-3" class="col-sm-12 col-xs-12 db-pricing-eleven no-gutter-sm plans">
+                    <ul>
+                        <li><i class="glyphicon glyphicon-print"></i>Scuba Rs6000</li>
+                        <li><i class="glyphicon glyphicon-time"></i>Underwater Scouter Rs5000</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>Cave Sea Kayaking Rs12000</li>
+                        <li><i class="glyphicon glyphicon-trash"></i>Dolphin Spotting Rs15000</li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <section id="footer">
+            <div class="container footer">
+                <div class="row footer-content">
+                    <div class="col-lg-3">
+                        <a class="navbar-brand padding-0" href="index.html">
+                            <img src="/assets/image/4.png" alt="logo" class="logo">
+                            <div class="logo-text">All Blue</div>
+                        </a>
+                        <p>A family, Owned business with 10 years of experience operating over 6 seas around the island.
+                        </p>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="footer-titles">Quick links</h2>
+                        <ul class="footer-links">
+                            <li><a href="/pages/service.html">Services</a></li>
+                            <li><a href="/pages/activities.html">Activities</a></li>
+                            <li><a href="/pages/special-offers.html">Special offers</a></li>
+                            <li><a href="/pages/about-us.html">About us</a></li>
+                            <li><a href="/pages/contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="footer-titles">Contact info</h2>
+                        <p class="contact">Tel: <a href="tel:51234567">51234567</a></p>
+                        <p class="contact">Email: <a href="mailto:Allblue@gmail.com">Allblue@gmail.com</a></p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="footer-titles">Newsletter</h2>
+                        <p class="contact">Subscribe to our Newsletter for latest news.</p>
+                        <form action="/" method="POST" id="newsletter">
+                            <div class="input-newsletter">
+                                <input class="newsletter" type="text" name="email" placeholder="Email">
+                                <button type="submit" form="newsletter">
+
+                                    <i class="fa fa-paper-plane">
+
+
+                                    </i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><span>
+                                Copyright 2020. All right reserved.
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

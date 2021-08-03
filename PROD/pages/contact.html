@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <title>All Blue - Contact Details</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/App.js"></script>
+</head>
+
+<body>
+    <div class="social-bar">
+        <div class="social-btns">
+            <a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="google" href="https://www.google.com/" target="_blank"><i class="fa fa-google"></i></a>
+            <a class="skype" href="https://www.skype.com/" target="_blank"><i class="fa fa-skype"></i></a>
+            <div class="search" onclick="search();"><i class="fa fa-search"></i></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-colour static-top">
+        <div class="container">
+            <!-- Overwriting Padding Top and Bot -->
+            <a class="navbar-brand padding-0" href="../index.html">
+                <img src="../assets/image/4.png" alt="logo" class="logo">
+                <div class="logo-text">All Blue</div>
+            </a>
+            <button class="navbar-toggler navbar-reponsive" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="special-offers.html">Special Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-js" href="contact.html">Contact Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Content  -->
+    <div class="page-title">
+        <h1 class="page-title-h1"></h1>
+    </div>
+
+    <!-- contact form -->
+    <div class="contact-form-parent">
+        <div class="container">
+            <h2 class="contact-title">Get in touch with us!</h2>
+            <form action="/" method="POST">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6" style="padding: 0;">
+                            <div class="input-section">
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="input-section">
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+
+                            <div class="input-section">
+                                <input type="text" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="input-section">
+                                <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <img src="../assets/image/contact.png" alt="Contact us" class="col-lg-6" style="padding: 15px 15px 0; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <input class="submit-button" type="submit" value="Send">
+                </div>
+
+            </form>
+
+
+            <!--Google map-->
+            <h2 class="contact-title-location">Our locations</h2>
+            <div class="container google-maps">
+                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1563.261760995186!2d57.43761907917502!3d-20.174611222827377!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smu!4v1596475295010!5m2!1sen!2smu" width="600" height="450" frameborder="0" style="border:0;"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+            <!--Google Maps-->
+
+        </div>
+    </div>
+
+    <!-- search -->
+    <div class="search-js" style="display:none;">
+        <div class="container">
+            <div class="search-close" onclick="search();">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="search-input">
+                <input name="search" placeholder="Search..." class="search-input-bar" type="text">
+            </div>
+        </div>
+    </div>
+
+    <!-- !Content -->
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <section id="footer">
+            <div class="container footer">
+                <div class="row footer-content">
+                    <div class="col-lg-3">
+                        <a class="navbar-brand padding-0" href="index.html">
+                            <img src="/assets/image/4.png" alt="logo" class="logo">
+                            <div class="logo-text">All Blue</div>
+                        </a>
+                        <p>A family, Owned business with 10 years of experience operating over 6 seas around the island.
+                        </p>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="footer-titles">Quick links</h2>
+                        <ul class="footer-links">
+                            <li><a href="/pages/service.html">Services</a></li>
+                            <li><a href="/pages/activities.html">Activities</a></li>
+                            <li><a href="/pages/special-offers.html">Special offers</a></li>
+                            <li><a href="/pages/about-us.html">About us</a></li>
+                            <li><a href="/pages/contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="footer-titles">Contact info</h2>
+                        <p class="contact">Tel: <a href="tel:51234567">51234567</a></p>
+                        <p class="contact">Email: <a href="mailto:Allblue@gmail.com">Allblue@gmail.com</a></p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="footer-titles">Newsletter</h2>
+                        <p class="contact">Subscribe to our Newsletter for latest news.</p>
+                        <form action="/" method="POST" id="newsletter">
+                            <div class="input-newsletter">
+                                <input class="newsletter" type="text" name="email" placeholder="Email">
+                                <button type="submit" form="newsletter">
+
+                                    <i class="fa fa-paper-plane">
+
+
+                                    </i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><span>
+                                Copyright 2020. All right reserved.
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+
+</html>
